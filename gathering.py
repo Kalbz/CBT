@@ -1,4 +1,7 @@
 import tkinter as tk
+######################################################################################
+# Ignore this code, its just something quickly I set up to test for the questionaires#
+######################################################################################
 
 questions = [
     "How would you rate the overall experience?",
