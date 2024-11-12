@@ -8,29 +8,43 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private float rotationSpeed = 5.0f;
 
     private bool isFreeCameraActive = false;
+    private Vector3 lastMousePosition;
 
     void LateUpdate()
     {
         if (target == null) return;
 
-        if (Input.GetKey(KeyCode.K))
+        // Check if the middle mouse button is pressed down
+        if (Input.GetMouseButtonDown(2))
         {
-            // Activate free camera mode
+            // Activate free camera mode and record initial mouse position
             isFreeCameraActive = true;
+            lastMousePosition = Input.mousePosition;
+        }
 
-            // Get the mouse movement inputs
-            float mouseX = Input.GetAxis("Mouse X");
-            float mouseY = Input.GetAxis("Mouse Y");
+        // Check if the middle mouse button is being held down
+        if (Input.GetMouseButton(2) && isFreeCameraActive)
+        {
+            // Get the current mouse position and calculate the delta
+            Vector3 currentMousePosition = Input.mousePosition;
+            Vector3 deltaMousePosition = currentMousePosition - lastMousePosition;
 
             // Rotate the camera based on mouse movement
-            transform.RotateAround(target.position, Vector3.up, mouseX * rotationSpeed);
-            transform.RotateAround(target.position, transform.right, -mouseY * rotationSpeed);
+            float mouseX = deltaMousePosition.x * rotationSpeed * Time.deltaTime;
+            float mouseY = deltaMousePosition.y * rotationSpeed * Time.deltaTime;
+            transform.RotateAround(target.position, Vector3.up, mouseX);
+            transform.RotateAround(target.position, transform.right, -mouseY);
 
-            // Update the offset based on the new camera position
+            // Immediately update offset and position for real-time following
             offset = transform.position - target.position;
+            lastMousePosition = currentMousePosition;
         }
-        else
+
+        // Regular follow mode when the middle mouse button is not held
+        if (!Input.GetMouseButton(2))
         {
+            isFreeCameraActive = false;
+
             Vector3 desiredPosition = target.position + offset;
 
             // Smoothly interpolate between current position and desired position
