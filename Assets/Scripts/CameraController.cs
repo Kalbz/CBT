@@ -3,58 +3,71 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     [SerializeField] private Transform target;
-    [SerializeField] private Vector3 offset = new Vector3(0, 5, -7);
-    [SerializeField] private float smoothSpeed = 0.5f;
-    [SerializeField] private float rotationSpeed = 20.0f;
+    [SerializeField] private Vector3 offset = new Vector3(0, 5, -10); // Initial offset to start above and behind the target
+    [SerializeField] private float rotationSpeed = 0.2f; // Sensitivity of the camera rotation
+    [SerializeField] private float zoomSpeed = 5.0f; // Speed of zooming
+    [SerializeField] private float minZoom = 3.0f;   // Minimum distance to target
+    [SerializeField] private float maxZoom = 15.0f;  // Maximum distance to target
+    [SerializeField] private float minVerticalAngle = 5.0f; // Minimum allowable vertical angle to prevent looking under the ground
+    [SerializeField] private float maxVerticalAngle = 80.0f; // Maximum allowable vertical angle to prevent looking too far up
 
-    private bool isFreeCameraActive = false;
+    private float currentVerticalAngle = 20.0f; // Start at a safe angle above the target
     private Vector3 lastMousePosition;
+
+    void Start()
+    {
+        // Set the initial camera position
+        transform.position = target.position + offset;
+        transform.LookAt(target);
+    }
 
     void LateUpdate()
     {
         if (target == null) return;
 
-        // Check if the middle mouse button is pressed down
-        if (Input.GetMouseButtonDown(2))
+        // Handle zooming
+        float scroll = Input.GetAxis("Mouse ScrollWheel");
+        if (scroll != 0.0f)
         {
-            // Activate free camera mode and record initial mouse position
-            isFreeCameraActive = true;
-            lastMousePosition = Input.mousePosition;
+            float distance = offset.magnitude;
+            distance = Mathf.Clamp(distance - scroll * zoomSpeed, minZoom, maxZoom);
+            offset = offset.normalized * distance;
         }
 
-        // Check if the middle mouse button is being held down
-        if (Input.GetMouseButton(2) && isFreeCameraActive)
+        // Rotate based on mouse movement
+        Vector3 currentMousePosition = Input.mousePosition;
+
+        if (lastMousePosition != Vector3.zero)
         {
-            // Get the current mouse position and calculate the delta
-            Vector3 currentMousePosition = Input.mousePosition;
             Vector3 deltaMousePosition = currentMousePosition - lastMousePosition;
 
-            // Rotate the camera based on mouse movement
-            float mouseX = deltaMousePosition.x * rotationSpeed * Time.deltaTime;
-            float mouseY = deltaMousePosition.y * rotationSpeed * Time.deltaTime;
-            transform.RotateAround(target.position, Vector3.up, mouseX);
-            transform.RotateAround(target.position, transform.right, -mouseY);
+            // Horizontal rotation
+            float mouseX = deltaMousePosition.x * rotationSpeed;
+            Quaternion horizontalRotation = Quaternion.AngleAxis(mouseX, Vector3.up);
+            offset = horizontalRotation * offset;
 
-            // Immediately update offset and position for real-time following
-            offset = transform.position - target.position;
-            lastMousePosition = currentMousePosition;
+            // Vertical rotation with clamping
+            float mouseY = deltaMousePosition.y * rotationSpeed;
+            currentVerticalAngle = Mathf.Clamp(currentVerticalAngle - mouseY, minVerticalAngle, maxVerticalAngle);
+            
+            // Update vertical rotation based on clamped angle
+            Vector3 direction = offset.normalized;
+            direction.y = Mathf.Tan(currentVerticalAngle * Mathf.Deg2Rad) * Mathf.Sqrt(direction.x * direction.x + direction.z * direction.z);
+            offset = direction * offset.magnitude;
         }
 
-        // Regular follow mode when the middle mouse button is not held
-        if (!Input.GetMouseButton(2))
-        {
-            isFreeCameraActive = false;
+        // Update last mouse position
+        lastMousePosition = currentMousePosition;
 
-            Vector3 desiredPosition = target.position + offset;
+        // Follow the player
+        Vector3 desiredPosition = target.position + offset;
+        transform.position = desiredPosition;
+        transform.LookAt(target);
+    }
 
-            // Smoothly interpolate between current position and desired position
-            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
-
-            // Set the camera position
-            transform.position = smoothedPosition;
-
-            // Make the camera look at the target
-            transform.LookAt(target);
-        }
+    private void OnDisable()
+    {
+        // Reset last mouse position
+        lastMousePosition = Vector3.zero;
     }
 }
