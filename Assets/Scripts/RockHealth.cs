@@ -3,9 +3,9 @@ using UnityEngine;
 public class RockHealth : MonoBehaviour
 {
     public int health = 10;  // Set the initial health of the rock
-    public float knockbackForce = 5f;  // Force applied to the rock when hit
-
+    public float knockbackForce = 2f;  // Force applied to the rock when hit
     private Rigidbody rb;
+    private MotivationalMessageManager motivationalMessageManager;
 
     void Start()
     {
@@ -13,6 +13,13 @@ public class RockHealth : MonoBehaviour
         if (rb == null)
         {
             Debug.LogError("Rigidbody not found on the rock!");
+        }
+
+        // Find the MotivationalMessageManager in the scene
+        motivationalMessageManager = FindObjectOfType<MotivationalMessageManager>();
+        if (motivationalMessageManager == null)
+        {
+            Debug.LogError("MotivationalMessageManager not found in the scene!");
         }
     }
 
@@ -31,6 +38,13 @@ public class RockHealth : MonoBehaviour
         if (health <= 0)
         {
             Debug.Log($"Rock {gameObject.name} destroyed.");
+
+            // Show a motivational message when the rock is destroyed
+            if (motivationalMessageManager != null)
+            {
+                motivationalMessageManager.DisplayMotivationalMessage();
+            }
+
             Destroy(gameObject);  // Destroy the rock when health reaches zero
         }
     }
