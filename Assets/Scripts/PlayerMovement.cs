@@ -18,28 +18,36 @@ public class PlayerMovement : MonoBehaviour
         controller = gameObject.AddComponent<CharacterController>();
     }
 
-    void Update() // Reverted back to Update from FixedUpdate
+    void Update()
     {
         // Check if the player is on the ground
         groundedPlayer = controller.isGrounded;
 
         if (groundedPlayer && playerVelocity.y < 0)
         {
-            playerVelocity.y = -2f; // Back to original value
+            playerVelocity.y = -2f; // Prevent the player from sticking to the ground
         }
 
         // Get the input from player
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        // Get direction relative to the camera forward and right vectors
-        Vector3 move = cameraTransform.forward * verticalInput + cameraTransform.right * horizontalInput;
+        // Get direction relative to the camera forward and right vectors but flatten it to the horizontal plane
+        Vector3 cameraForward = cameraTransform.forward;
+        cameraForward.y = 0f;
+        cameraForward.Normalize();
 
-        // Eliminate vertical component to prevent unwanted vertical movement
-        move.y = 0f;
+        Vector3 cameraRight = cameraTransform.right;
+        cameraRight.y = 0f;
+        cameraRight.Normalize();
+
+        // Calculate movement direction based on player input
+        Vector3 move = cameraForward * verticalInput + cameraRight * horizontalInput;
+
+        // Move the player at a consistent speed
         controller.Move(move * Time.deltaTime * playerSpeed);
 
-        // Rotate the player to face the movement direction (revert to instant rotation)
+        // Rotate the player to face the movement direction
         if (move != Vector3.zero)
         {
             gameObject.transform.forward = move; // Rotate player instantly towards the movement direction
