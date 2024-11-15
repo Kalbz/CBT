@@ -4,8 +4,8 @@ public class CameraFollow : MonoBehaviour
 {
     [SerializeField] private Transform target;
     [SerializeField] private Vector3 offset = new Vector3(0, 5, -7);
-    [SerializeField] private float smoothSpeed = 0.125f;
-    [SerializeField] private float rotationSpeed = 5.0f;
+    [SerializeField] private float smoothSpeed = 0.5f;
+    [SerializeField] private float rotationSpeed = 20.0f;
 
     private bool isFreeCameraActive = false;
     private Vector3 lastMousePosition;
