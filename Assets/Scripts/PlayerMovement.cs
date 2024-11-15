@@ -18,14 +18,14 @@ public class PlayerMovement : MonoBehaviour
         controller = gameObject.AddComponent<CharacterController>();
     }
 
-    void Update()
+    void Update() // Reverted back to Update from FixedUpdate
     {
         // Check if the player is on the ground
         groundedPlayer = controller.isGrounded;
 
         if (groundedPlayer && playerVelocity.y < 0)
         {
-            playerVelocity.y = -2f; // Ensure player sticks to the ground and resets y velocity
+            playerVelocity.y = -2f; // Back to original value
         }
 
         // Get the input from player
@@ -39,10 +39,10 @@ public class PlayerMovement : MonoBehaviour
         move.y = 0f;
         controller.Move(move * Time.deltaTime * playerSpeed);
 
-        // Rotate the player to face the movement direction
+        // Rotate the player to face the movement direction (revert to instant rotation)
         if (move != Vector3.zero)
         {
-            gameObject.transform.forward = move; // Rotate player towards the movement direction
+            gameObject.transform.forward = move; // Rotate player instantly towards the movement direction
         }
 
         // Handle jumping
