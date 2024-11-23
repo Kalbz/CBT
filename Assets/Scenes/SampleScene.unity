@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4370,7 +4370,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91add1803f72f400f84ef9672629a61b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  messageText: {fileID: 214331489}
 --- !u!1001 &316511036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12866,14 +12865,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23538c4f31e024fa7bcfb0387ef94daa, type: 3}
+  m_Script: {fileID: 11500000, guid: 9138f5a98ed39054ab8dd7dae330e089, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1179500755}
-  offset: {x: 0, y: 5, z: -7}
-  rotationSpeed: 1
+  offset: {x: 0, y: 5, z: -10}
+  rotationSpeed: 0.2
   zoomSpeed: 5
-  minZoom: 1
+  minZoom: 3
   maxZoom: 15
   minVerticalAngle: 5
   maxVerticalAngle: 80
@@ -15260,8 +15259,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e983ed9b8eb45078bcd68e13f348a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
-  knockbackForce: 5
 --- !u!136 &1174423969
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -15297,8 +15294,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 510b25cda40c747ba9b3970ed3ce4536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emissionIntensity: 5
-  emissionColor: {r: 0.06074228, g: 0.8323527, b: 0.990566, a: 1}
 --- !u!1001 &1176570952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15385,11 +15380,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1179500750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 240010354ff8d42438b94b500982a5d8, type: 3}
+  m_Script: {fileID: 11500000, guid: 3229afd4f59203d428f2da1c22e968c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 20
-  jumpHeight: 3
+  playerSpeed: 2
+  jumpHeight: 1
   gravityValue: -9.81
   cameraTransform: {fileID: 963194228}
 --- !u!136 &1179500752
@@ -20200,7 +20195,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f7225ab5f36e48cfba3aaefcbcc9300, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
 --- !u!54 &1512382923
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -20261,9 +20255,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a3a5809b8bff421daf56e39a8c8510e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pickaxe: {fileID: 1512382919}
-  swingAngle: 60
-  swingSpeed: 4
 --- !u!4 &1514004193 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 439629779905013000, guid: 0f3e6d4a57e1748d590d235a5a135cf4, type: 3}
@@ -22446,8 +22437,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e983ed9b8eb45078bcd68e13f348a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
-  knockbackForce: 5
 --- !u!136 &1648433034
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -22483,8 +22472,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 510b25cda40c747ba9b3970ed3ce4536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emissionIntensity: 5
-  emissionColor: {r: 0.06074228, g: 0.8323527, b: 0.990566, a: 1}
 --- !u!4 &1649600777 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3823843671627919681, guid: 3e2f8c3f7d4184d5ab9a631bb99d1f45, type: 3}
@@ -22909,8 +22896,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 510b25cda40c747ba9b3970ed3ce4536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emissionIntensity: 5
-  emissionColor: {r: 0.06074228, g: 0.8323527, b: 0.990566, a: 1}
 --- !u!136 &1688040957
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -22946,8 +22931,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e983ed9b8eb45078bcd68e13f348a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
-  knockbackForce: 5
 --- !u!54 &1688040962
 Rigidbody:
   m_ObjectHideFlags: 0
