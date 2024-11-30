@@ -8,6 +8,8 @@ public class PlayerRopeController : MonoBehaviour
     public RespirationBar respirationBar; // Reference to the breathing bar
     public TextMeshProUGUI messageText; // Motivational messages
     public TextMeshProUGUI barText; // Instructions about respiration
+    public GameObject endGamePanel; // Reference to the End Game Panel
+    public TextMeshProUGUI scoreText; // Reference to the score text in the panel
     public string[] motivationalMessages = new string[]
             {
          "Don't give up, you can do it!",
@@ -17,11 +19,18 @@ public class PlayerRopeController : MonoBehaviour
 
     private Rigidbody rb;
     private bool isFalling = false;
+    private int fallCount = 0; // Tracks the number of falls
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         ResetPlayerPosition();
+       
+        // Ensure the end game panel is inactive at start
+        if (endGamePanel != null)
+        {
+            endGamePanel.SetActive(false);
+        }
     }
 
     private void Update()
@@ -49,13 +58,14 @@ public class PlayerRopeController : MonoBehaviour
         }
         else
         {
+            fallCount++; // Increment the fall counter
             FallOffRope(); // Falls if the bar is decreasing
         }
     }
 
     void MoveForward()
     {
-        rb.MovePosition(transform.position + Vector3.forward * Time.deltaTime * 18f); 
+        rb.MovePosition(transform.position + Vector3.forward * Time.deltaTime * 18f);
     }
 
     public void FallOffRope()
@@ -100,7 +110,23 @@ public class PlayerRopeController : MonoBehaviour
         isFalling = false;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void ShowEndGamePanel()
+    {
+        if (endGamePanel != null)
+        {
+            // Calculate the score based on falls
+            int maxScore = 100;
+            int penaltyPerFall = 10; // Lose 10 points per fall
+            int score = Mathf.Max(maxScore - (fallCount * penaltyPerFall), 0);
+
+            // Update the UI
+            endGamePanel.SetActive(true);
+            messageText.text = ""; // Clear any motivational messages
+            scoreText.text = $"Congratulations!\nYour Score: {score}/100";
+        }
+    }
+
+        private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Fall"))
         {
@@ -108,7 +134,7 @@ public class PlayerRopeController : MonoBehaviour
         }
         else if (other.CompareTag("Goal"))
         {
-            messageText.text = "Congratulations! You've completed the course!";
+            ShowEndGamePanel();
         }
     }
 }
