@@ -8,6 +8,7 @@ TagManager:
   - Start
   - Goal
   - Fall
+  - Bird
   layers:
   - Default
   - TransparentFX
