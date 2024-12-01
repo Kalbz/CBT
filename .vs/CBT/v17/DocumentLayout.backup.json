@@ -7,7 +7,15 @@
       "RelativeMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerropecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|c:\\users\\simom\\cbt\\assets\\scripts\\fallzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|c:\\users\\simom\\cbt\\assets\\scripts\\birdmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\birdmovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|C:\\Users\\simom\\CBT\\assets\\scripts\\forestgamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\forestgamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|C:\\Users\\simom\\CBT\\assets\\scripts\\fallzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fallzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\simom\\CBT\\Assets\\GoalZone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\GoalZone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|c:\\users\\simom\\cbt\\assets\\scripts\\forestgamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\forestgamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|C:\\Users\\simom\\CBT\\assets\\scripts\\forestcameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,11 +42,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "BirdMovement.cs",
+              "DocumentMoniker": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\BirdMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BirdMovement.cs",
+              "ToolTip": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\BirdMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BirdMovement.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T09:06:56.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FallZone.cs",
               "DocumentMoniker": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\FallZone.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FallZone.cs",
@@ -50,25 +67,24 @@
               "RelativeToolTip": "Assets\\Scripts\\FallZone.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T14:11:37.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-30T14:11:37.011Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "ForestGameManager.cs",
               "DocumentMoniker": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\ForestGameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ForestGameManager.cs",
               "ToolTip": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\ForestGameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\ForestGameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-30T13:48:26.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "GoalZone.cs",
               "DocumentMoniker": "C:\\Users\\simom\\CBT\\Assets\\GoalZone.cs",
               "RelativeDocumentMoniker": "Assets\\GoalZone.cs",
@@ -76,12 +92,11 @@
               "RelativeToolTip": "Assets\\GoalZone.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T13:09:40.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T13:09:40.383Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "FallZone.cs",
               "DocumentMoniker": "C:\\Users\\simom\\CBT\\Assets\\FallZone.cs",
               "RelativeDocumentMoniker": "Assets\\FallZone.cs",
@@ -89,8 +104,7 @@
               "RelativeToolTip": "Assets\\FallZone.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T13:08:06.884Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T13:08:06.884Z"
             },
             {
               "$type": "Document",
@@ -100,14 +114,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerRopeController.cs",
               "ToolTip": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\PlayerRopeController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerRopeController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAgwDwAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAkwJAAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T13:00:24.575Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ForestCameraController.cs",
               "DocumentMoniker": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\ForestCameraController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ForestCameraController.cs",
@@ -119,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "RespirationBar.cs",
               "DocumentMoniker": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\RespirationBar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\RespirationBar.cs",

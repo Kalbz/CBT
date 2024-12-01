@@ -24,6 +24,7 @@ public class PlayerRopeController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.useGravity = false;
         ResetPlayerPosition();
        
         // Ensure the end game panel is inactive at start
@@ -65,11 +66,14 @@ public class PlayerRopeController : MonoBehaviour
 
     void MoveForward()
     {
+        rb.useGravity = false;
         rb.MovePosition(transform.position + Vector3.forward * Time.deltaTime * 18f);
     }
 
     public void FallOffRope()
     {
+        rb.useGravity = true;
+
         isFalling = true;
 
         // Temporarily disables player control (removes velocity and rotation)
@@ -126,7 +130,7 @@ public class PlayerRopeController : MonoBehaviour
         }
     }
 
-        private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Fall"))
         {
@@ -135,6 +139,12 @@ public class PlayerRopeController : MonoBehaviour
         else if (other.CompareTag("Goal"))
         {
             ShowEndGamePanel();
+        }
+        else if (other.CompareTag("Bird"))
+        {
+            fallCount++; // Increment the fall counter
+            Debug.Log("You hit the bird");
+            FallOffRope(); // The player falls if he hits the bird
         }
     }
 }
