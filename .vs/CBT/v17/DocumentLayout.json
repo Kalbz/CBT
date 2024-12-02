@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Temp\\GeneratedFromGraph-SwampWaterShader-SampleTexture2D-d0e81ac5d36644c68aeff04a1c97bdd6.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Temp\\GeneratedFromGraph-SwampWaterShader-SampleTexture2D-d0e81ac5d36644c68aeff04a1c97bdd6.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\assets\\scripts\\playerjumpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|c:\\users\\usuario\\documents\\erasmus\\e-health\\new cbt\\cbt\\assets\\scripts\\playerjumpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerjumpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -39,6 +43,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< Updated upstream
               "Title": "GeneratedFromGraph-SwampWaterShader-SampleTexture2D-d0e81ac5d36644c68aeff04a1c97bdd6.shader",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Temp\\GeneratedFromGraph-SwampWaterShader-SampleTexture2D-d0e81ac5d36644c68aeff04a1c97bdd6.shader",
               "RelativeDocumentMoniker": "Temp\\GeneratedFromGraph-SwampWaterShader-SampleTexture2D-d0e81ac5d36644c68aeff04a1c97bdd6.shader",
@@ -47,10 +52,25 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
               "WhenOpened": "2024-11-26T11:18:34.225Z",
+=======
+              "Title": "PlayerJumpController.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\PlayerJumpController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerJumpController.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\PlayerJumpController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerJumpController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA/wCMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T15:08:59.27Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 1,
               "Title": "PlayerJumpController.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\PlayerJumpController.cs",
@@ -68,6 +88,9 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+=======
+              "DocumentIndex": 3,
+>>>>>>> Stashed changes
               "Title": "FallTrigger.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\FallTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\FallTrigger.cs",
@@ -79,7 +102,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 5,
+=======
+              "DocumentIndex": 4,
+>>>>>>> Stashed changes
               "Title": "GoalTrigger.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\GoalTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GoalTrigger.cs",
@@ -91,7 +118,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 3,
+=======
+              "DocumentIndex": 2,
+>>>>>>> Stashed changes
               "Title": "ForestGameManager.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\ForestGameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ForestGameManager.cs",
@@ -103,7 +134,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 1,
+>>>>>>> Stashed changes
               "Title": "PlayerRopeController.cs",
               "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\PlayerRopeController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerRopeController.cs",
