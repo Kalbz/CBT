@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Rock
+  - Start
+  - Goal
+  - Fall
+  - Bird
   layers:
   - Default
   - TransparentFX
