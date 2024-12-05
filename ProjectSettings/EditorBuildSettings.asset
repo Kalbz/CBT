@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: e5b9bf1392d0e3249a3611895dfb6dc8
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/ForestOfTension.unity
+    guid: a4eea99f54dd95349a6fb5bd800dcb20
+  - enabled: 1
+    path: Assets/Scenes/Swamp of Digestive Woes.unity
+    guid: a7acfa8590f555e4e9dd020086748a7f
   m_configObjects: {}
