@@ -1,4 +1,5 @@
 Welcome to CBT, Create Better Thoughts!
+
 This is an interactive game designed to challenge your mind, test your focus, and promote positive thinking. Get ready to embark on an exciting journey of self-discovery and skill development through engaging gameplay!
 
 How to Play
