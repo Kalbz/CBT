@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\simom\\CBT\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|C:\\Users\\simom\\CBT\\assets\\scripts\\forestgamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\forestgamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|c:\\users\\simom\\cbt\\assets\\scripts\\quizmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quizmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerbehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|c:\\users\\simom\\cbt\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|C:\\Users\\simom\\CBT\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -32,10 +36,6 @@
       "RelativeMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\PlayerJumpController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|C:\\Users\\simom\\CBT\\Assets\\Scripts\\ForestGameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\ForestGameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|C:\\Users\\simom\\CBT\\Assets\\Scripts\\PlayerRopeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A69A442-FE28-1A27-187A-F4923091FDC5}|Assembly-CSharp.csproj|solutionrelative:Assets\\Scripts\\PlayerRopeController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -47,37 +47,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "QuizManager.cs",
-              "DocumentMoniker": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\QuizManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\QuizManager.cs",
-              "ToolTip": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\QuizManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\QuizManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "FallTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\FallTrigger.cs",
+              "RelativeDocumentMoniker": "..\\..\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\FallTrigger.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\FallTrigger.cs",
+              "RelativeToolTip": "..\\..\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\FallTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAswAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T11:35:46.887Z",
+              "WhenOpened": "2024-12-04T18:50:21.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GoalTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\GoalTrigger.cs",
+              "RelativeDocumentMoniker": "..\\..\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\GoalTrigger.cs",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\GoalTrigger.cs",
+              "RelativeToolTip": "..\\..\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\GoalTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T18:50:21.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ForestGameManager.cs",
+              "DocumentMoniker": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\ForestGameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ForestGameManager.cs",
+              "ToolTip": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\ForestGameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ForestGameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T19:31:27.615Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PlayerMovement.cs",
-              "DocumentMoniker": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\PlayerMovement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
-              "ToolTip": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\PlayerMovement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAIBQwBkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T20:15:37.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "PlayerBehavior.cs",
               "DocumentMoniker": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\PlayerBehavior.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerBehavior.cs",
@@ -85,35 +96,36 @@
               "RelativeToolTip": "Assets\\Scripts\\PlayerBehavior.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T20:09:17.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T20:09:17.632Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IntroController.cs",
-              "DocumentMoniker": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\IntroController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\IntroController.cs",
-              "ToolTip": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\IntroController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\IntroController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PlayerMovement.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAIBQwBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T19:31:28.642Z"
+              "WhenOpened": "2024-12-04T20:15:37.127Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GeneratedFromGraph-SwampWaterShader-SampleTexture2D-d0e81ac5d36644c68aeff04a1c97bdd6.shader",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Temp\\GeneratedFromGraph-SwampWaterShader-SampleTexture2D-d0e81ac5d36644c68aeff04a1c97bdd6.shader",
-              "RelativeDocumentMoniker": "..\\..\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Temp\\GeneratedFromGraph-SwampWaterShader-SampleTexture2D-d0e81ac5d36644c68aeff04a1c97bdd6.shader",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Temp\\GeneratedFromGraph-SwampWaterShader-SampleTexture2D-d0e81ac5d36644c68aeff04a1c97bdd6.shader",
-              "RelativeToolTip": "..\\..\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Temp\\GeneratedFromGraph-SwampWaterShader-SampleTexture2D-d0e81ac5d36644c68aeff04a1c97bdd6.shader",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2024-11-26T11:18:34.225Z"
+              "DocumentIndex": 1,
+              "Title": "QuizManager.cs",
+              "DocumentMoniker": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\QuizManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\QuizManager.cs",
+              "ToolTip": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\QuizManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\QuizManager.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAuwIEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T11:35:46.887Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "PlayerJumpController.cs",
               "DocumentMoniker": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\PlayerJumpController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerJumpController.cs",
@@ -126,38 +138,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "FallTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\FallTrigger.cs",
-              "RelativeDocumentMoniker": "..\\..\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\FallTrigger.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\FallTrigger.cs",
-              "RelativeToolTip": "..\\..\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\FallTrigger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T18:50:21.729Z"
+              "Title": "GeneratedFromGraph-SwampWaterShader-SampleTexture2D-d0e81ac5d36644c68aeff04a1c97bdd6.shader",
+              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Temp\\GeneratedFromGraph-SwampWaterShader-SampleTexture2D-d0e81ac5d36644c68aeff04a1c97bdd6.shader",
+              "RelativeDocumentMoniker": "..\\..\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Temp\\GeneratedFromGraph-SwampWaterShader-SampleTexture2D-d0e81ac5d36644c68aeff04a1c97bdd6.shader",
+              "ToolTip": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Temp\\GeneratedFromGraph-SwampWaterShader-SampleTexture2D-d0e81ac5d36644c68aeff04a1c97bdd6.shader",
+              "RelativeToolTip": "..\\..\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Temp\\GeneratedFromGraph-SwampWaterShader-SampleTexture2D-d0e81ac5d36644c68aeff04a1c97bdd6.shader",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2024-11-26T11:18:34.225Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "GoalTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\GoalTrigger.cs",
-              "RelativeDocumentMoniker": "..\\..\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\GoalTrigger.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\GoalTrigger.cs",
-              "RelativeToolTip": "..\\..\\USUARIO\\Documents\\ERASMUS\\e-health\\New CBT\\CBT\\Assets\\Scripts\\GoalTrigger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "IntroController.cs",
+              "DocumentMoniker": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\IntroController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\IntroController.cs",
+              "ToolTip": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\IntroController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\IntroController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T18:50:21.735Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ForestGameManager.cs",
-              "DocumentMoniker": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\ForestGameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ForestGameManager.cs",
-              "ToolTip": "C:\\Users\\simom\\CBT\\Assets\\Scripts\\ForestGameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ForestGameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T19:31:27.615Z"
+              "WhenOpened": "2024-12-04T19:31:28.642Z"
             },
             {
               "$type": "Document",

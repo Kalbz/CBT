@@ -12,6 +12,6 @@ public class ForestGameManager : MonoBehaviour
 
     public void ReturnToMenu()
     {
-        SceneManager.LoadScene("MenuScene");
+        SceneManager.LoadScene("MainMenu");
     }
 }
