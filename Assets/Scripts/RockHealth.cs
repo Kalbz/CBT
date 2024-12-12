@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RockHealth : MonoBehaviour
 {
-    public int health = 10;  // Set the initial health of the rock
+    public int health = 3;  // Set the initial health of the rock
     public float knockbackForce = 2f;  // Force applied to the rock when hit
     private Rigidbody rb;
     private MotivationalMessageManager motivationalMessageManager;
