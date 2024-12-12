@@ -4,6 +4,9 @@ public class PickaxeCollision : MonoBehaviour
 {
     public int damage = 1;  // Amount of damage to deal to the rock
     private PickaxeSwing pickaxeSwing;
+    private float damageCooldown = 0.3f; // Time between each damage application in seconds
+    private float lastDamageTime = 0f; // Keeps track of the last time damage was applied
+
 
     void Start()
     {
@@ -14,31 +17,41 @@ public class PickaxeCollision : MonoBehaviour
             Debug.LogError("PickaxeSwing script not found on the pickaxe GameObject!");
         }
     }
-
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        // Check if the pickaxe head collided with a rock
+        // Check if the pickaxe head is still in contact with the rock
         if (other.CompareTag("Rock"))
         {
-            Debug.Log($"Pickaxe hit: {other.gameObject.name}");
+            Debug.Log($"Pickaxe still in contact with: {other.gameObject.name}");
 
             if (pickaxeSwing != null && pickaxeSwing.IsSwinging)
             {
-                Debug.Log("Pickaxe is swinging, applying damage.");
-
-                RockHealth rockHealth = other.GetComponent<RockHealth>();
-                if (rockHealth != null)
+                // Check if enough time has passed since the last damage application
+                if (Time.time - lastDamageTime >= damageCooldown)
                 {
-                    // Calculate the direction from the pickaxe to the rock
-                    Vector3 hitDirection = (other.transform.position - transform.position).normalized;
+                    Debug.Log("Pickaxe is swinging, applying damage.");
 
-                    // Apply damage with knockback
-                    rockHealth.TakeDamage(damage, hitDirection);
-                    Debug.Log($"Damage applied to rock: {other.gameObject.name}");
+                    RockHealth rockHealth = other.GetComponent<RockHealth>();
+                    if (rockHealth != null)
+                    {
+                        // Calculate the direction from the pickaxe to the rock
+                        Vector3 hitDirection = (other.transform.position - transform.position).normalized;
+
+                        // Apply damage with knockback
+                        rockHealth.TakeDamage(damage, hitDirection);
+                        Debug.Log($"Damage applied to rock: {other.gameObject.name}");
+
+                        // Update the last damage time
+                        lastDamageTime = Time.time;
+                    }
+                    else
+                    {
+                        Debug.LogWarning("No RockHealth script found on the collided rock!");
+                    }
                 }
                 else
                 {
-                    Debug.LogWarning("No RockHealth script found on the collided rock!");
+                    Debug.Log("Damage cooldown in effect, no damage applied.");
                 }
             }
             else
@@ -47,4 +60,5 @@ public class PickaxeCollision : MonoBehaviour
             }
         }
     }
+
 }
