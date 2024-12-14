@@ -17,9 +17,9 @@ This is an interactive game designed to challenge your mind, test your focus, an
 
 ## Mini-Games Overview
 1. **The Maze**:
-    Theme: Positive Thinking
-    Objective: Navigate through a maze while breaking "stones of negativity" along the way.
-    Challenge: Stay focused on the positive as you clear your path and reach the exit.
+    _Theme_: Positive Thinking
+    _Objective_: Navigate through a maze while breaking "stones of negativity" along the way.
+    _Challenge_: Stay focused on the positive as you clear your path and reach the exit.
 
 2. **The Forest**
     _Theme_ :Breathing Rhythm
@@ -31,7 +31,7 @@ This is an interactive game designed to challenge your mind, test your focus, an
         If you move while the "breathing bar" is descending, you’ll fall and restart.
         Avoid obstacles like birds—touching one will make you fall and restart.
 
-3. **The Swamp**
+4. **The Swamp**
     _Theme_: Concentration
     _Objective_: Cross the swamp by jumping onto stones. Some stones are stable, while others will sink.
     _Challenge_: Memorize the stable path and concentrate to avoid falling.
