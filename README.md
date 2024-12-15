@@ -22,7 +22,7 @@ This is an interactive game designed to challenge your mind, test your focus, an
     _Challenge_: Stay focused on the positive as you clear your path and reach the exit.
 
 2. **The Forest**
-    _Theme_ :Breathing Rhythm
+    _Theme_: Breathing Rhythm
     _Objective_: Walk across a rope by synchronizing your movements with your breathing.
     _How to Play_:
         Walk forward while inhaling.
