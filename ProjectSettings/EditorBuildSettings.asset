@@ -7,13 +7,16 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: Assets/Scenes/MenuScene.unity
-    guid: 3c0118a68a52a914ab51b66e8faceec2
+    guid: f9cb90ad0faa4452cb0fd99de05e4a5e
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
-    guid: e32f5eb43c32dba4591adb937879fa05
+    guid: e5252be78e70847fe991642728f8de2d
+  - enabled: 1
+    path: Assets/Scenes/StorylineScene.unity
+    guid: 7ef0920c8165749e5a048a2368fcbfb3
   - enabled: 1
     path: Assets/Scenes/QuizScene.unity
-    guid: 921f02a2cd2df4146b6824cd26b01226
+    guid: fd2d863eab256441bbd6c70f5d81a954
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
