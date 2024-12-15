@@ -6,6 +6,8 @@
 - Simona Mastroberardino (commits name: simommmmm)
 - Olivia Gallego Toscano (commits name: USUARIO or oliviagallego)
 - Suriya Ilanchezhain
+  
+## IMPORTANT: The full game executable is the file "CBT.exe" and is located in the "game" subfolder of our delivery folder.
 
 ## Aim
 This is an interactive game designed to challenge your mind, test your focus, and promote positive thinking. Get ready to embark on an exciting journey of self-discovery and skill development through engaging gameplay!
