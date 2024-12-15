@@ -7,9 +7,6 @@
 [Ll]ogs/
 [Mm]emoryCaptures/
 
-# Unity auto-generated metadata files
-/[Aa]ssets/**/*.meta
-
 # Unity Editor-specific settings
 /[Uu]ser[Ss]ettings/
 
