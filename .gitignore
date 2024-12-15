@@ -7,6 +7,9 @@
 [Ll]ogs/
 [Mm]emoryCaptures/
 
+# Exclude the game app
+CBT_game.app/
+
 # Unity Editor-specific settings
 /[Uu]ser[Ss]ettings/
 
@@ -71,3 +74,6 @@ desktop.ini
 # Gradle files (used in Android builds)
 .gradle
 UserSettings/Layouts/
+
+# Allow .meta files to be pushed
+!*.meta
