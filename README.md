@@ -42,7 +42,7 @@ This is an interactive game designed to challenge your mind, test your focus, an
 - Unique mechanics in each mini-game to keep the gameplay fresh and exciting.
 
 ## Controls
-Use the arrow keys to move in the Maze and use buttons on the screen to play the other two games.
+In the Maze, use arrow keys to move and mouse to change your view; also click the left button of the mouse to smash rocks. Use buttons on the screen to play the other two games.
 
 ## Tips for Success
 - In the _Maze_, focus on clearing negativity and finding the most efficient path.
