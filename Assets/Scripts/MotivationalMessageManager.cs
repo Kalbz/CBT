@@ -8,8 +8,12 @@ public class MotivationalMessageManager : MonoBehaviour
     public Transform playerTransform;             // Reference to the player's Transform
     public Vector3 offset = new Vector3(-2f, 2.5f, 0);  // Offset from the player's position
 
+    public Color textColor = Color.white;         // Default text color
+    public Color bubbleColor = Color.white;       // Default bubble background color (optional)
+
     private Animator bubbleAnimator;              // Animator for the bubble
     private TextMeshProUGUI messageText;          // Text component for displaying messages
+    private SpriteRenderer bubbleRenderer;        // SpriteRenderer for the bubble background (optional)
 
     private string[] motivationalMessages = {
         "Focus and positive thinking help you overcome any tension.",
@@ -36,8 +40,14 @@ public class MotivationalMessageManager : MonoBehaviour
             Debug.LogWarning("Animator not found on ThinkingBubble GameObject!");
         }
 
+        // Assign the SpriteRenderer for the bubble background (optional)
+        bubbleRenderer = thinkingBubble.GetComponentInChildren<SpriteRenderer>();
+
         // Ensure the bubble is initially hidden
         thinkingBubble.SetActive(false);
+
+        // Apply initial colors
+        ApplyColors();
     }
 
     void Update()
@@ -73,6 +83,21 @@ public class MotivationalMessageManager : MonoBehaviour
         else
         {
             Debug.LogWarning("ThinkingBubble, MessageText, or Animator not assigned!");
+        }
+    }
+
+    private void ApplyColors()
+    {
+        // Apply text color
+        if (messageText != null)
+        {
+            messageText.color = textColor;
+        }
+
+        // Apply bubble background color (if applicable)
+        if (bubbleRenderer != null)
+        {
+            bubbleRenderer.color = bubbleColor;
         }
     }
 

@@ -87,7 +87,7 @@ public class QuizManager : MonoBehaviour
                 {
                     "A. Difficult, work often invades my personal life.",
                     "B. Very good, I balance the two effectively.",
-                    "C. Moderate, I’m working on improving it.",
+                    "C. Moderate, Iï¿½m working on improving it.",
                     "D. Variable, it depends on circumstances."
                 }
             },
@@ -168,30 +168,29 @@ public class QuizManager : MonoBehaviour
 
     void ShowResult()
     {
+        string nextScene = "SampleScene"; // Default scene
+
         if (alessandraScore >= carloScore && alessandraScore >= lukeScore && alessandraScore >= mariaScore)
         {
             Debug.Log("Player assigned to Positive Thinking Minigame");
-            SceneManager.LoadScene("SampleScene");
+            nextScene = "SampleScene";
         }
         else if (carloScore >= alessandraScore && carloScore >= lukeScore && carloScore >= mariaScore)
         {
             Debug.Log("Player assigned to Focus Minigame");
-            SceneManager.LoadScene("Swamp of Digestive Woes");
+            nextScene = "Swamp of Digestive Woes";
         }
         else if (lukeScore >= alessandraScore && lukeScore >= carloScore && lukeScore >= mariaScore)
         {
             Debug.Log("Player assigned to Breathing Minigame");
-            SceneManager.LoadScene("ForestOfTension");
+            nextScene = "ForestOfTension";
         }
-        else if (mariaScore >= alessandraScore && mariaScore >= carloScore && mariaScore >= lukeScore)
-        {
-            Debug.Log("Player assigned to Positive Thinking Minigame");
-            SceneManager.LoadScene("SampleScene");
-        }
-        else
-        {
-            Debug.Log("Player assigned to default minigame");
-            SceneManager.LoadScene("SampleScene");
-        }
+
+        // Save and load the result scene
+        PlayerPrefs.SetString("NextScene", nextScene);
+        PlayerPrefs.Save();
+        SceneManager.LoadScene(nextScene);
     }
+
+
 }

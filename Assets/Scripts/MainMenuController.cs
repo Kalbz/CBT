@@ -6,7 +6,7 @@ public class MainMenuController : MonoBehaviour
     public void PlayGame()
     {
         Debug.Log("PlayGame method called");
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("StorylineScene");
     }
 
     public void QuitGame()
